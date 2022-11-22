@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    background-color: rgb(160, 194, 254);
+}
+nav{
+    display: flex;
+    padding: .5% 14.5%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(52, 116, 229);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+nav .title{
+    width: 300px;
+    font-weight: 800;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+nav .menu{
+    flex: 1;
+    text-align: right;
+}
+nav .menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 2% 1%;
+}
+nav .menu ul li a{
+    font-weight: 800;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+.body-container{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(1, 81, 203);
+}
+.body-container .body-content{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+}
+.body-content .left{
+    width:  60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.left .textbox{
+    width: 100%;
+    height: 120px;
+}
+.left .textbox h1{
+    color: white;
+    font-size: 40px;
+}
+.left .textbox p{
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.body-content .right{
+    width: 40%;
+    height: 100%;
+}
+.body-content .right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.detail-container{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(160, 194, 254);
+}
+.detail-container .detail-content{
+    width: 70%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.item{
+    width: 31.5%;
+    height: 235px;
+    border-radius: 13px;
+    background-color: rgb(10, 81, 203);
+    box-shadow: 1px 1.5px 5px 2px rgba(0, 0, 0, 0.384);
+}
+.item .top{
+    width: 90%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.top i{
+    font-size: 30px;
+}
+.top h1{
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 30px;
+}
+.item .bottom{
+    width: 90%;
+    height: 150px;
+    margin: 20px auto;
+    color: white;
+}
+@media (max-width: 1000px){
+    nav{
+        height: 50px;
+        background-color: rgb(52, 116, 229);
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+    nav .title{
+        width: 20%;
+        left: 10px;
+        position: absolute;
+    }
+    nav .menu{
+        width: 60%;
+        position: absolute;
+        right: 10px;
+        
+    }
+    .body-container{
+        height: 530px;
+    }
+    .body-container .body-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .body-content .left{
+        width: 100%;
+        height: 150px;
+    }
+    .body-content .right{
+        width: 100%;
+        height: 300px;
+        margin-top: 50px;
+    }
+    .detail-container{
+        width: 100%;
+        height: 1700px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .detail-container .detail-content{
+        width: 70%;
+        height: 500px;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    .item{
+        width: 100%;
+        margin:  10% 0;
+    }
+}
